@@ -1,0 +1,21 @@
+import
+--connect
+jdbc:mysql://centos7-1/test
+--username
+root
+--password
+root
+--as-textfile
+--columns
+orderid, orderdate, empid, custid, qty
+--table
+rollup
+--delete-target-dir
+--target-dir
+/flume/2018-02-03
+--where
+1=1
+--fetch-size
+10
+-m
+1
